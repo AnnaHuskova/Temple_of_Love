@@ -1,0 +1,146 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+    line-height: 1;
+    font-family: 'Montserat', sans-serif;
+    background: rgb(247, 247, 247);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1 1 auto;
+
+}
+
+.img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+._container {
+    max-width: 1200px;
+    min-height: 100%;
+    margin: 0px auto;
+    padding: 0px 7px;
+    display: flex;
+}
+
+/* ---------------HEADER---------- */
+
+.header {
+    background: #00d6d3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 108px;
+    z-index: 50;
+
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+ .header_logo  .logo-text {
+    color: #fff;
+    font-size: 21px;
+ }
+
+ .love-text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+
+ }
+
+ /* -------------BURGER----------- */
+
+ .humburger-menu {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    transform: rotate(3600deg);
+    transition: 12s;
+    cursor: pointer;
+}
+.humburger-menu:hover {
+    transform: rotate(-3600deg);
+}
+
+
+.up-row {
+    display: flex;
+    justify-content: center;
+}
+
+.down-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24%;
+}
+
+.bar {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* ------------------HERO------------------ */
+
+.hero {
+    position: relative;
+    display: flex;
+    margin-top: 108px;
+}
+
+
+/* -----------------VIDEO_SECTION------------------- */
+
+.video {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.video-item {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    width: 100%;
+    height: 36px;
+    border-radius: 3px;
+    border: solid #00d6d3;
+    margin: 12px 0;
+
+}
+
+
+
+
