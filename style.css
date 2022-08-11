@@ -4,7 +4,7 @@ body {
     height: 100%;
     line-height: 1;
     font-family: 'Montserat', sans-serif;
-    background: rgb(247, 247, 247);
+    background: rgb(248, 248, 248);
 }
 
 * {
@@ -49,6 +49,7 @@ a {
     top: 0;
     width: 100%;
     height: 108px;
+    box-shadow: 0 0 7px rgba(47, 61, 61, 0.7);
     z-index: 50;
 
 }
@@ -108,6 +109,7 @@ a {
     height: 24px;
     background: #fff;
     border-radius: 50%;
+    box-shadow: 0 3px 3px rgba(194, 194, 194, 0.479);
 }
 
 /* ------------------HERO------------------ */
@@ -116,7 +118,15 @@ a {
     position: relative;
     display: flex;
     margin-top: 108px;
+    height: 240px;
+    font-size: 18px;
 }
+
+.hero-cards > h1 {
+    margin-top: 24px;
+    color: rgba(73, 94, 93, 0.5);
+}
+
 
 
 /* -----------------VIDEO_SECTION------------------- */
@@ -129,17 +139,88 @@ a {
     margin-top: 24px;
 }
 
-.video-item {
+.video-link {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 36px;
-    width: 100%;
-    height: 36px;
-    border-radius: 3px;
-    border: solid #00d6d3;
+    width: 1200px;
+    height: 72px;
+    border-radius: 21px;
+    box-shadow: 0 7px 12px rgba(73, 94, 93, 0.37);
+    background: #ffffff;
     margin: 12px 0;
+}
+
+.video-name {
+    margin: 0 36px; 
+    font-size: 24px;
+    color: rgb(65, 65, 65);
 
 }
+
+.date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00d6d3;
+    margin: 0 12PX;
+}
+
+.btn-video { 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 12px;
+    height: 54px;
+    width: 120px;
+    background: #00d6d3;
+    margin: 0 12px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 3px 9px rgba(47, 61, 61, 0.37);
+    transition: 0.3s;
+    font-size: 21px;
+ }
+
+ .btn-video:hover {
+    box-shadow: 0 1px 1px rgba(73, 94, 93, 0.37);
+    
+
+ }
+
+ .video-description {
+    display: flex;
+    margin: 42px 54px;
+
+ }
+
+ .text {
+    font-size: 21px;
+    font-weight: lighter;
+    color: rgb(44, 44, 44);
+ }
+
+.pray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    
+}
+
+.pray-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 7px;
+    color: #00d6d3;
+    font-weight: bold;
+
+}
+
+
+
 
 
 
