@@ -118,13 +118,69 @@ a {
     position: relative;
     display: flex;
     margin-top: 108px;
-    height: 240px;
+    height: ;
     font-size: 18px;
 }
 
-.hero-cards > h1 {
+.hero-cards {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.massadge {
+    position: relative;
     margin-top: 24px;
     color: rgba(73, 94, 93, 0.5);
+    font-size: 24px;
+}
+
+.animation {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 21px 21px;
+
+}
+
+.ring {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: -18px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 1px 0px 0px #00d6d3;
+    margin-top: 90px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.ring::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #00d6d3;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 3px rgba(0, 214, 211, 0.7);
+}
+
+.ring:nth-child(3) {
+    position: absolute;
+    top: -9px;
 }
 
 
@@ -140,6 +196,7 @@ a {
 }
 
 .video-link {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,6 +257,11 @@ a {
     color: rgb(44, 44, 44);
  }
 
+p, li {
+    margin-top: 12px;
+
+}
+
 .pray {
     display: flex;
     justify-content: center;
@@ -216,8 +278,21 @@ a {
     margin-top: 7px;
     color: #00d6d3;
     font-weight: bold;
+    text-align: justify;
 
 }
+
+/* -----------FOOTER------------ */
+
+.footer {
+    position: relative;
+    align-items: center;
+    height: 240px;
+    background: #00d6d3;
+}
+
+
+
 
 
 
