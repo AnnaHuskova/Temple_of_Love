@@ -2522,8 +2522,8 @@ p, li {
        flex-direction: column;
        align-items: center;
        justify-content: space-between;
-       width:430px;
-       height: 160px;
+       width:320px;
+       height: 180px;
        border-radius: 21px;
        box-shadow: 0 7px 12px rgba(73, 94, 93, 0.37);
        background: #ffffff;
@@ -2641,6 +2641,300 @@ p, li {
    }
    
    }   
+
+
+   /* -------------------------------------- */
+
+   /* ------------------------------- */
+
+   @media (max-width: 320px) {
+
+    ._container {
+       max-width: 320px;
+       margin: 0px auto;
+       padding: 0px 21px;
+       display: flex;
+       
+    }
+    
+    /* ---------------HEADER---------- */
+   
+    .header {
+       background: #00d6d3;
+       position: fixed;
+       left: 0;
+       top: 0;
+       height: 50px;
+       box-shadow: 0 0 7px rgba(47, 61, 61, 0.7);
+       z-index: 50;
+   
+    }
+   
+    .header-content {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   
+    }
+   
+    .header_logo  .logo-text {
+       color: #fff;
+       font-size: 21px;
+    }
+   
+    .love-text {
+       color: #fff;
+       font-size: 24px;
+       font-weight: bold;
+    }
+   
+    /* -------------BURGER----------- */
+   
+    .humburger-menu {
+       display: block;
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+       transform: rotate(3600deg);
+       transition: 12s;
+       cursor: pointer;
+   }
+   .humburger-menu:hover {
+       transform: rotate(-3600deg);
+   }
+   
+   
+   .up-row {
+       display: flex;
+       justify-content: center;
+   }
+   
+   .down-row {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 23%;
+   }
+   
+   .bar {
+       display: block;
+       width: 12px;
+       height: 12px;
+       background: #fff;
+       border-radius: 50%;
+       box-shadow: 0 3px 3px rgba(194, 194, 194, 0.479);
+   }
+    
+    /*------------------HERO------------------ */
+   
+   .hero {
+       position: relative;
+       display: flex;
+       margin-top: 70px;
+       height: auto;
+
+   }
+   
+   .hero-cards {
+       position: relative;
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+       
+   }
+   
+   .massadge {
+       position: relative;
+       margin-top: 12px;
+       color: rgba(73, 94, 93, 0.5);
+       font-size: 14px;
+   }
+   
+   .animation {
+       align-items: center;
+       display: flex;
+       justify-content: center;
+       margin: 18px 18px;
+   
+   }
+   
+   .ring {
+       position: relative;
+       width: 70px;
+       height: 70px;
+       margin: -9px;
+       border-radius: 50%;
+       border: 3px solid #ffffff;
+       box-shadow: 0px 1px 0px 0px #00d6d3;
+       margin-top: 40px;
+       animation: animate 3s linear infinite;
+   }
+   
+   @keyframes animate{
+       0%{
+           transform: rotate(0deg);
+       }
+       100%{
+           transform: rotate(360deg);
+       }
+   }
+   
+   .ring::before {
+       content: '';
+       position: absolute;
+       width: 14px;
+       height: 14px;
+       background: #00d6d3;
+       top: 3px;
+       right: 3px;
+       border-radius: 50%;
+       box-shadow: 0 0 7px 7px rgba(0, 250, 246, 0.3);
+   }
+   
+   .ring:nth-child(3) {
+       position: absolute;
+       top: 21px;
+   }
+   
+   
+   
+   /* -----------------VIDEO_SECTION------------------- */
+   
+   .video {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 18px;
+   }
+   
+   .video-link {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+       width:290px;
+       height: 200px;
+       border-radius: 21px;
+       box-shadow: 0 7px 12px rgba(73, 94, 93, 0.37);
+       background: #ffffff;
+       margin: 12px;
+   }
+   
+   .video-name {
+       margin: 12px 12px; 
+       font-size: 24px;
+       color: rgb(65, 65, 65);
+   
+   }
+   
+   .date {
+       font-size: 18px;
+       font-weight: bold;
+       color: #00d6d3;
+       margin: 0 9px;
+   }
+   
+   .btn-video { 
+       align-items: center;
+       justify-content: center;
+       display: flex;
+       border-radius: 12px;
+       height: 63px;
+       width: 160px;
+       background: #00d6d3;
+       margin: 12px 12px;
+       color: #fff;
+       box-shadow: 0 3px 9px rgba(47, 61, 61, 0.37);
+       transition: 0.3s;
+       font-size: 21px;
+    }
+   
+    .btn-video:hover {
+       box-shadow: 0 1px 1px rgba(73, 94, 93, 0.37);
+       
+   
+    }
+   
+    .video-description {
+       display: flex;
+       margin: 9px 12px;
+   
+    }
+   
+    .text {
+       font-size: 16px;
+       font-weight: lighter;
+       color: rgb(44, 44, 44);
+    }
+   
+   p, li {
+       margin-top: 12px;
+   
+   }
+   
+   .pray {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 21px;
+       
+   }
+   
+   .pray-num {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 21px;
+       margin-top: 7px;
+       color: #00d6d3;
+       font-weight: bold;
+       text-align: justify;
+   
+   }
+   
+   /* -----------FOOTER------------ */
+   
+   .footer {
+       position: relative;
+       align-items: center;
+       height: 180px;
+       background: #00d6d3;
+       justify-content: center;
+   }
+   
+   .footer-content {
+       position: relative;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .link {
+       color: #fff;
+       font-size: 21px;
+   
+   }
+   
+   .footer-bottom {
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       display: flex;
+       background: #017977;
+       height: 42px;
+       
+   }
+   
+   .designer {
+       color: #fff;
+       font-size: 17px;
+       font-weight: light;
+   }
+   
+   }   
+
 
 
 
